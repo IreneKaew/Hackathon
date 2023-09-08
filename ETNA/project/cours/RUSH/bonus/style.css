@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.photoid {
+    width: 150px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+
+.size20 {
+    font-size: 20px;
+}
+.name {
+    text-align: right;
+    color: red;
+}
+
+.adress {
+    text-align: right;
+    font-style: italic;
+    margin-top: 35px;
+}
+
+.blockho{
+    width: 100%;
+}
+
+
+.compet {
+    width:100%;
+    background-color:#80acf2 ;
+    color: white;
+    margin: 200px;
+
+}
+
+.lang{
+    width: 300%;
+    height: 27%;
+    background-color:#80acf2 ;
+    color: white;
+    margin: 10px;
+}
+
+.expe {
+background-color: #bef17f;
+color: white;
+margin: 200px;
+}
+
+.lang .percent {
+    position: relative;
+    width: 83%;
+    height: 8px;
+    background: lightskyblue;
+    display: block;
+    margin-top: 5px;
+}
+
+.lang .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8%;
+    background:#bef17f ;
+
+}
+
+img{
+    width: 85px;
+    height: 85px;
+    float: left;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: row;
+}
+
+.lien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200%;
+    height: 435px;
+    background: #bef17f;
+    margin: 10px;
+    border: dashed 1px #80acf2;
+}
+
+
+

@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.photoid {
+    width: 150px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+
+.size20 {
+    font-size: 20px;
+}
+.name {
+    text-align: right;
+    color: red;
+}
+
+.adress {
+    text-align: right;
+    font-style: italic;
+    margin-top: 35px;
+}
+
+.blockho{
+    width: 100%;
+}
+
+.compet {
+    width:100%;
+    background-color:#80acf2 ;
+    color: white;
+
+}
+
+
+.expe {
+background-color: #bef17f;
+color: white;
+}
+
+
+}
+
+img{
+    width: 85px;
+    height: 85px;
+    float: left;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.lien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27%;
+    height: 435px;
+    background: #bef17f;
+    margin: 10px;
+    border: dashed 1px #80acf2;
+}
+
+.lang{
+    width: 28%;
+    height: 27%;
+    background-color:#80acf2 ;
+    color: white;
+}

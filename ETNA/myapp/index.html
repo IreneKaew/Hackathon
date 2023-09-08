@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>The Chat</title>
+  </head>
+  <body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+      let username = "";
+
+      socket.on("message", (message) => {
+        const { user, content } = message;
+        const messageElement = document.createElement("p");
+        messageElement.innerHTML = `<strong>${user}:</strong> ${content}`;
+        document.getElementById("message-history").appendChild(messageElement);
+      });
+
+      socket.on("messageHistory", (history) => {
+        const messageHistoryElement =
+          document.getElementById("message-history");
+        history.forEach((message) => {
+          const { user, content } = message;
+          const messageElement = document.createElement("p");
+          messageElement.innerHTML = `<strong>${user}:</strong> ${content}`;
+          messageHistoryElement.appendChild(messageElement);
+        });
+      });
+
+      function joinChat() {
+        username = document.getElementById("username-input").value;
+        document.getElementById("username-form").style.display = "none";
+        document.getElementById("chat-interface").style.display = "block";
+        socket.emit("join", username);
+      }
+
+      function sendMessage() {
+        const message = document.getElementById("message-input").value;
+        socket.emit("message", message);
+        document.getElementById("message-input").value = "";
+      }
+    </script>
+    <div class="chat-placeholder" id="username-form">
+      <h1 class="title">Choose a Username</h1>
+      <div class="send-placeholder">
+        <input
+          class="message-input"
+          type="text"
+          id="username-input"
+          placeholder="Enter your username"
+        />
+        <button onclick="joinChat()">Join Chat</button>
+      </div>
+    </div>
+    <div class="chat-placeholder" id="chat-interface" style="display: none">
+      <h1 class="title"><span id="username-display"></span>The Chat</h1>
+      <div class="chat-displayer" id="message-history"></div>
+      <input
+        class="message-input"
+        type="text"
+        id="message-input"
+        placeholder="Enter your message"
+      />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </body>
+</html>

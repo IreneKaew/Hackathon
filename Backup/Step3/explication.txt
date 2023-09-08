@@ -1,0 +1,4 @@
+J'initialise i à 1, parcequ'on commence à compter à partir de 1.
+J'initialise ma liste monkey_count.
+Je réalise une boucle ou j'ajouterais toutes les itérations de i jusqu'à n.
+Je retourne la valeur de la liste.

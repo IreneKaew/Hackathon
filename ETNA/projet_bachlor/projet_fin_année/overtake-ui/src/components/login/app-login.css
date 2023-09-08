@@ -1,0 +1,76 @@
+
+.login-container {
+  height: 30rem;
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff ;
+  border-radius: 7px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.login-title {
+  font-family: Arial, sans-serif;
+  color: #CE2029;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+
+.input-container {
+  display: flex;  
+  flex-direction: column;
+  background-color: transparent ;
+}
+
+.login-input {
+  height: 2rem;
+  padding: 0.7rem;
+  margin: 1rem;
+  border-radius: 2px;
+}
+
+.login-button {
+  height: 3rem;
+  margin-top: 3rem;
+  border-radius: 2px;
+  background-color: #CE2029;
+  color: #FFFF;
+  border: none;
+  font-size: 1rem ;
+  width: 7rem;
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+  margin-top: 1.5rem;
+}
+
+
+.input-name{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.input-name > input[type=text]{
+  border: none;
+  border-bottom: 2px solid #939699;
+  outline: none;
+  width: 18rem;
+}
+
+
+.underline-animation{
+  transition: all 0.5s;
+  display: inline-block;
+  bottom: 0;
+  left: -100%;
+  position: absolute;
+  width: 91%;
+  height: 2px;
+  background-color: #CE2029;
+  margin: 1rem;
+}
+.input-name > input[type=text]:focus + .underline-animation{
+  left: 0;
+}

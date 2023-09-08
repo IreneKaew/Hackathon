@@ -1,0 +1,1 @@
+Réalisation d'un retour de la valeur de time x 0.5 en définnissant le type à int pour avoir une valeur forcément arrondi.

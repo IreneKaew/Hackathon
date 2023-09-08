@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  height: 100vh; /* 100% of the viewport height */
+  width: 100%;
+  background-image: url("/overtake-ui/src/components/test/src/assets/assets/image/IMG-4130.jpg  ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; /* Center the background image */
+}
+
+header {
+  background: #5851ff;
+  color: white;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 12px;
+}

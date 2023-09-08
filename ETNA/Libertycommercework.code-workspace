@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "LibertyCommerce",
+			"path": "LibertyCommerce"
+		},
+		{
+			"name": "LBC_Pro",
+			"path": "../LBC_Pro"
+		}
+	],
+	"settings": {}
+}
